@@ -1,19 +1,25 @@
-<form action='/productos' method='post'>
-<ul>
-	<li>
-		<label for='title'>Title</label>
-		<input type='text' name='title' id='title' />
-	</li>
-	<li>
-		<label for='price'>Price</label>
-	    <input type='number' name='price' id='price' />
-	</li>
-	<li>
-		<label for='price'>Thumbnail</label>
-		<input type='text' name='thumbnail' id='thumbnail' />
-	</li>
+<div class="container mt-3  ">
+		<form action='/productos' method='post'>
+			<div class="">
+				<label for='title' class="form-label">Title</label>
+				<br>
+				<input type='text' name='title' id='title' />
+			</div>
+			<div class="form-group">
 
-</ul>
-	<input type='submit' value='submit' />
-</form>
-<a href='/productos'>Show Products</a>
+				<label for='price' class="form-label">Price</label>
+				<br>
+				<input type='number' name='price' id='price' />
+			</div>
+			<div class="form-group">
+
+				<label for='price' class="form-label">Thumbnail</label>
+				<br>
+				<input type='text' name='thumbnail' id='thumbnail' />
+			</div>
+			<input type='submit'  value='submit' class="btn btn-dark mt-3" />
+
+		</form>
+		<a href='/productos' class="btn btn-dark mt-3">Show Products</a>
+
+	</div>
